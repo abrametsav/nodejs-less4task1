@@ -1,0 +1,14 @@
+{{> header }}
+  {{> form }}
+  <div class="results">
+    <h2>Новости {{newsCategory}}</h2>
+    {{#each news}}
+      <div class="news">
+        <h3>{{newsTitle}}</h3>
+        <p>{{newsDate}}</p>
+        <p>{{newsAnnounce}}</p>
+        <p><a href="{{newsLink}}">Прямая ссылка на статью</a></p>
+      </div>
+    {{/each}}
+  </div>
+{{> footer }}
